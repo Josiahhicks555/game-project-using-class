@@ -1,0 +1,54 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Math_Game
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            int random = r.Next(1, 200);
+
+            Console.WriteLine("Welcome");
+            Console.WriteLine("How many players will be playing");
+            Console.Write("1, 2, 3, 4 : ");
+            string players = Console.ReadLine();
+            Console.WriteLine($"there are {players} players playing.");
+
+            Console.WriteLine("We will now begin");
+
+            if (players == "1")
+            {
+                Console.WriteLine("Solve this problem");
+                Console.Write($"What is {random} + {random}: ");
+
+
+            }
+
+            else if (players == "2")
+            {
+                Console.WriteLine("Solve this problem");
+                Console.Write($"What is {random} + {random}: ");
+            }
+
+            else if (players == "3")
+            {
+                Console.WriteLine("Solve this problem");
+                Console.Write($"What is {random} + {random}: ");
+            }
+
+            else if (players == "4")
+            {
+                Console.WriteLine("Solve this problem");
+                Console.Write($"What is {random} + {random}: ");
+            }
+            
+            Console.ReadKey();
+
+        }
+    }
+}
