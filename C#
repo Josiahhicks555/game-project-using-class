@@ -10,8 +10,17 @@ namespace Game_using_class
     {
         static void Main(string[] args)
         {
-            Random r = new Random();
-            int random = r.Next(-3, 8);
+            Random r1 = new Random();
+            int random1 = r1.Next(-3, 8);
+
+            Random r2 = new Random();
+            int random2 = r2.Next(-2, 8);
+
+            Random r3 = new Random();
+            int random3 = r3.Next(-4, 7);
+
+            Random r4 = new Random();
+            int random4 = r4.Next(-1, 8);
 
             Random Luck = new Random();
             int YourLuck = Luck.Next(4, 5);
@@ -33,12 +42,11 @@ namespace Game_using_class
                 Console.Write("How old are you: ");
                 string age1 = Console.ReadLine();
                 Console.WriteLine($"You are {age1} years old");
-//Score 1 player
+//Score 1 spin
                 Console.WriteLine("Lets see how Lucky you are");
-                Console.Write("Press enter to spin: ");
+                Console.Write("player 1 press enter to spin: ");
                 string player1score = Console.ReadLine();
-                Console.WriteLine($"You rolled {random + YourLuck}");
-
+                Console.WriteLine($"Player 1 rolled {random1 + YourLuck}");
 
             }
 
@@ -62,11 +70,32 @@ namespace Game_using_class
                 Console.Write("How old are you: ");
                 string age2 = Console.ReadLine();
                 Console.WriteLine($"You are {age2} years old");
-// Score 2 players
+// player 1 spin
                 Console.WriteLine("Lets see how Lucky you are");
-                Console.Write("Press enter to spin: ");
+                Console.Write("player 1 press enter to spin: ");
                 string player1score = Console.ReadLine();
-                Console.WriteLine($"You rolled {random + YourLuck}");
+                Console.WriteLine($"Player 1 rolled {random1 + YourLuck}");
+
+// player 2 sipn
+            Console.Write("player 2 press enter to spin: ");
+            string player2score = Console.ReadLine();
+            Console.WriteLine($"Player 2 rolled {random2 + YourLuck}");
+
+//score for 2 players
+            if (random1 + YourLuck > random2 + YourLuck)
+                {
+                    Console.WriteLine("Player 1 wins");
+                }
+
+            else if (random1 + YourLuck < random2 + YourLuck)
+                {
+                    Console.WriteLine("Player 2 wins");
+                }
+            else
+                {
+                    Console.WriteLine("You both got the same number");
+                }
+
             }
 
 
@@ -94,11 +123,25 @@ namespace Game_using_class
                 Console.Write("How old are you: ");
                 string age3 = Console.ReadLine();
                 Console.WriteLine($"You are {age3} years old");
-// Score 3 players
+// player 1 spin
                 Console.WriteLine("Lets see how Lucky you are");
-                Console.Write("Press enter to spin: ");
+                Console.Write("player 1 press enter to spin: ");
                 string player1score = Console.ReadLine();
-                Console.WriteLine($"You rolled {random + YourLuck}");
+                Console.WriteLine($"Player 1 rolled {random1 + YourLuck}");
+
+// player 2 spin
+            Console.Write("player 2 press enter to spin: ");
+            string player2score = Console.ReadLine();
+            Console.WriteLine($"Player 2 rolled {random2 + YourLuck}");
+
+// player 3 spin
+                Console.Write("player 3 press enter to spin: ");
+                string player3score = Console.ReadLine();
+                Console.WriteLine($"Player 3 rolled {random3 + YourLuck}");
+// score for 3 players
+
+
+
             }
 
 
@@ -111,38 +154,60 @@ namespace Game_using_class
 //4 players
             else if (players == "4")
             {
-                Console.Write("What is your 1st players name: ");
-                string name1 = Console.ReadLine();
-                Console.WriteLine($"Hello {name1} ");
-                Console.Write("How old are you: ");
-                string age1 = Console.ReadLine();
-                Console.WriteLine($"You are {age1} years old");
+            Console.Write("What is your 1st players name: ");
+            string name1 = Console.ReadLine();
+            Console.WriteLine($"Hello {name1} ");
+            Console.Write("How old are you: ");
+            string age1 = Console.ReadLine();
+            Console.WriteLine($"You are {age1} years old");
 
-                Console.Write("What is your 2nd players name: ");
-                string name2 = Console.ReadLine();
-                Console.WriteLine($"Hello {name2} ");
-                Console.Write("How old are you: ");
-                string age2 = Console.ReadLine();
-                Console.WriteLine($"You are {age2} years old");
+            Console.Write("What is your 2nd players name: ");
+            string name2 = Console.ReadLine();
+            Console.WriteLine($"Hello {name2} ");
+            Console.Write("How old are you: ");
+            string age2 = Console.ReadLine();
+            Console.WriteLine($"You are {age2} years old");
 
-                Console.Write("What is your 3rd players name: ");
-                string name3 = Console.ReadLine();
-                Console.WriteLine($"Hello {name3} ");
-                Console.Write("How old are you: ");
-                string age3 = Console.ReadLine();
-                Console.WriteLine($"You are {age3} years old");
+            Console.Write("What is your 3rd players name: ");
+            string name3 = Console.ReadLine();
+            Console.WriteLine($"Hello {name3} ");
+            Console.Write("How old are you: ");
+            string age3 = Console.ReadLine();
+            Console.WriteLine($"You are {age3} years old");
 
-                Console.Write("What is your 4th players name: ");
-                string name4 = Console.ReadLine();
-                Console.WriteLine($"Hello {name4} ");
-                Console.Write("How old are you: ");
-                string age4 = Console.ReadLine();
-                Console.WriteLine($"You are {age4} years old");
-// Score 4 players
-                Console.WriteLine("Lets see how Lucky you are");
-                Console.Write("Press enter to spin: ");
-                string player1score = Console.ReadLine();
-                Console.WriteLine($"You rolled {random + YourLuck}");
+            Console.Write("What is your 4th players name: ");
+            string name4 = Console.ReadLine();
+            Console.WriteLine($"Hello {name4} ");
+            Console.Write("How old are you: ");
+            string age4 = Console.ReadLine();
+            Console.WriteLine($"You are {age4} years old");
+
+// player 1 spin
+            Console.WriteLine("Lets see how Lucky you are");
+            Console.Write("player 1 press enter to spin: ");
+            string player1score = Console.ReadLine();
+            Console.WriteLine($"Player 1 rolled {random1 + YourLuck}");
+
+// player 2 spin
+            Console.Write("player 2 press enter to spin: ");
+            string player2score = Console.ReadLine();
+            Console.WriteLine($"Player 2 rolled {random2 + YourLuck}");
+
+// player 3 spin
+            Console.Write("player 3 press enter to spin: ");
+            string player3score = Console.ReadLine();
+            Console.WriteLine($"Player 3 rolled {random3 + YourLuck}");
+
+// player 4 spin
+            Console.Write("player 4 press enter to spin: ");
+            string player4score = Console.ReadLine();
+            Console.WriteLine($"Player 4 rolled {random4 + YourLuck}");
+// score for 4 players
+
+
+
+
+
             }
 
             Console.ReadKey();
@@ -150,4 +215,3 @@ namespace Game_using_class
         }
     }
 }
-
