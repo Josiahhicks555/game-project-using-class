@@ -80,12 +80,12 @@ namespace Game_using_class
                 //score for 2 players
                 if (random1 + YourLuck > random2 + YourLuck)
                 {
-                    Console.WriteLine("Player 1 wins");
+                    Console.WriteLine($"{name1} wins");
                 }
 
                 else if (random1 + YourLuck < random2 + YourLuck)
                 {
-                    Console.WriteLine("Player 2 wins");
+                    Console.WriteLine($"{name2} wins");
                 }
                 else
                 {
@@ -138,17 +138,17 @@ namespace Game_using_class
                 // score for 3 players
                 if (random1 + YourLuck > random2 + YourLuck && random1 + YourLuck > random3 + YourLuck)
                 {
-                    Console.WriteLine("Player 1 wins");
+                    Console.WriteLine($"{name1} wins");
                 }
 
                 else if (random2 + YourLuck > random1 + YourLuck && random2 + YourLuck > random3 + YourLuck)
                 {
-                    Console.WriteLine("Player 2 wins");
+                    Console.WriteLine($"{name2} wins");
                 }
 
                 else if (random3 + YourLuck > random1 + YourLuck && random3 + YourLuck > random2 + YourLuck)
                 {
-                    Console.WriteLine("Player 3 wins");
+                    Console.WriteLine($"{name3} wins");
                 }
 
                 else
@@ -221,22 +221,22 @@ namespace Game_using_class
                 // score for 4 players
                 if (random1 + YourLuck > random2 + YourLuck && random1 + YourLuck > random3 + YourLuck && random1 + YourLuck > random4 + YourLuck)
                 {
-                    Console.WriteLine("Player 1 wins");
+                    Console.WriteLine($"{name1} wins");
                 }
 
                 else if (random2 + YourLuck > random1 + YourLuck && random2 + YourLuck > random3 + YourLuck && random2 + YourLuck > random4 + YourLuck)
                 {
-                    Console.WriteLine("Player 2 wins");
+                    Console.WriteLine($"{name2} wins");
                 }
 
                 else if (random3 + YourLuck > random1 + YourLuck && random3 + YourLuck > random2 + YourLuck && random3 + YourLuck > random4 + YourLuck)
                 {
-                    Console.WriteLine("Player 3 wins");
+                    Console.WriteLine($"{name3} wins");
                 }
 
                 else if (random4 + YourLuck > random1 + YourLuck && random4 + YourLuck > random2 + YourLuck && random4 + YourLuck > random3 + YourLuck)
                 {
-                    Console.WriteLine("Player 4 wins");
+                    Console.WriteLine($"{name4} wins");
                 }
 
                 else
