@@ -8,20 +8,15 @@ namespace Game_using_class
 {
     public class Program
     {
-        static void Main(string[] args)
+       static void Main(string[] args)
         {
 
-            Random r1 = new Random();
-            int random1 = r1.Next(1, 11);
-
-            Random r2 = new Random();
-            int random2 = r2.Next(1, 11);
-
-            Random r3 = new Random();
-            int random3 = r3.Next(1, 11);
-
-            Random r4 = new Random();
-            int random4 = r4.Next(1, 11);
+            
+            Random roll = new Random();
+            int random1 = roll.Next(1, 11);
+            int random2 = roll.Next(1, 11);
+            int random3 = roll.Next(1, 11);
+            int random4 = roll.Next(1, 11);
 
             Random Luck = new Random();
             int YourLuck = Luck.Next(1, 2);
@@ -253,6 +248,7 @@ namespace Game_using_class
 
 
             }
+            
 
             Console.ReadKey();
 
